@@ -180,7 +180,7 @@ return (
 
           <Link to="/" className="flex ms-2 md:me-24">
             <img
-              src="\public\logo.webp"
+              src="https://res.cloudinary.com/dqo56owj9/image/upload/v1739180039/logo_xrreag.webp"
               className="h-8 rounded-full me-3"
               alt="Mail Box"
             />

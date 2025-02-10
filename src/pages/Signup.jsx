@@ -94,7 +94,7 @@ if (validate()) {
 
 
     <div className="text-center mb-8">
-    <img src="\public\logo.webp" alt="logo" className="w-20 h-20 rounded-full inline-block" />
+    <img src="https://res.cloudinary.com/dqo56owj9/image/upload/v1739180039/logo_xrreag.webp" alt="logo" className="w-20 h-20 rounded-full inline-block" />
     <h1 className='text-white font-semibold'>SignUp Your Account</h1>
      
     </div>
