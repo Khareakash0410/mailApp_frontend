@@ -26,13 +26,14 @@ const ForgetPassword = () => {
 
       if (res.status === 200 || 201) {
         toast.success(res.data.msg);
-        emailRef.current.reset();
-        navigate("/signin");
+        emailRef.current.value = "";
+
+        setTimeout(() => navigate("/signin"), 1000);
       }
 
 
     } catch (error) {
-      toast.error(error.response.data.msg)
+      toast.error(error.response?.data?.msg);
     } finally {
       setLoading(false)
     }
