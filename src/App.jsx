@@ -112,7 +112,28 @@ return (
   Socket.isConnected && <>
 
                  {/* Protected Routes */}
-                 <Route path='/' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Home />} />}/>    
+      <Route path='/' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Home />} />}/>    
+      <Route path='/send/mail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<ComposeMail />} />}/>
+      <Route path='/sentMail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<SentMail />} />}/>
+      <Route path='/recieveMail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<RecievedMail />} />}/>
+      <Route path='/singleMail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<SingleMail />} />}/>
+      <Route path='/account' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Account />} />}/>
+      <Route path='/allMedia' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<AllMedia />} />}/>
+
+     
+
+           {/* Catch-all for unknown routes */}
+      <Route path="*" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Navigate to="/" />} />} />
+
+  </>
+}
+
+
+{
+  !Socket.isConnected && <>
+
+                 {/* Protected Routes */}
+      <Route path='/' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Home />} />}/>    
       <Route path='/send/mail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<ComposeMail />} />}/>
       <Route path='/sentMail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<SentMail />} />}/>
       <Route path='/recieveMail' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<RecievedMail />} />}/>
