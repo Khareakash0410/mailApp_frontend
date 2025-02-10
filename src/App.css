@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: linear-gradient(#642bff, #ff22e6);
+}
+
+@media (min-width: 640px ) {
+    .custom-modal{
+        margin-left: 192px !important;
+    }
+}
+.custom-modal .ant-modal-content {
+    background-color: rgb(32, 42, 50) !important;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.custom-modal .ant-modal-close {
+    background-color: black;
+}
+.custom-modal .ant-modal-close:hover {
+    background-color: black !important;
+}
+
+.custom-modal .ant-btn-primary {
+    background-color: black;
+}
+.custom-modal .ant-btn-primary:hover{
+    background-color: black !important;
+}
+  
+.modal-footer {
+    margin-top: 20px;
+}
