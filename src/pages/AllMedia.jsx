@@ -11,7 +11,6 @@ const AllMedia = () => {
     let url = import.meta.env.VITE_DEPLOYEMENT === "production" ? import.meta.env.VITE_ENDPOINT : "http://localhost:8080"
 
     const [allMedia, setAllMedia] = useState([]);
-    console.log(allMedia)
 
     const User = useSelector((state) => state.user);
 

@@ -10,7 +10,6 @@ const ResetPassword = () => {
 
 
   const {resetToken} = useParams();
-  console.log(resetToken)
 
   const navigate = useNavigate();
 

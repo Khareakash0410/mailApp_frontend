@@ -8,7 +8,7 @@ const Account = () => {
 
 
 const User = useSelector((state) => state.user);
-console.log(User)
+
 
 
 
